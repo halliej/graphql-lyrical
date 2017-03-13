@@ -26,8 +26,9 @@ class SongCreate extends Component {
         <Link to="/">Back</Link>
         <h3>Create a New Song</h3>
         <form onSubmit={this.onSubmit.bind(this)}>
-          <label>Song Title:</label>
+          <label htmlFor='titleInput'>Song Title:</label>
           <input
+            id='titleInput'
             onChange={event => this.setState({ title: event.target.value })}
             value={this.state.title}
           />
