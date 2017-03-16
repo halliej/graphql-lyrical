@@ -22,3 +22,10 @@ mutation {
     }
   }
 }
+
+mutation {
+  addSong (title: "Dog Call") {
+    id
+    title
+  }
+}
